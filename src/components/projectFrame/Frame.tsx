@@ -1,14 +1,15 @@
 import Navbar from "../navbar/Navbar";
+import NewCollectionFrame from "../newCollection/NewCollectionFrame";
 import HomePoster from "../poster/HomePoster";
 
 
 export default function Frame(){
 
     return(
-        <div className=" h-screen w-screen flex flex-col items-center bg-black overflow-auto">
+        <div className=" h-full w-full flex flex-col items-center bg-black overflow-auto">
             <Navbar />
             <HomePoster />
-            
+            <NewCollectionFrame />
 
         </div>
     )

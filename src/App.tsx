@@ -4,7 +4,7 @@ import Frame from "./components/projectFrame/Frame"
 function App() {
   
   return (
-    <div className="">
+    <div >
         <Frame />
     </div>
   )

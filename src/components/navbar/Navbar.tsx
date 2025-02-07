@@ -7,7 +7,7 @@ import "./navbar-css/Slider.css"
 
 export default function Navbar() {
   return (
-    <div className="relative w-9/12 h-[10%] flex items-center ">
+    <header className="relative w-9/12 h-[10%] flex items-center ">
         
         <NikeIcon />
 
@@ -36,13 +36,7 @@ export default function Navbar() {
       <HeartIcon />
       <PersonIcon />
       <SeachIcon />
-
-        
-
-
       
-    
-      
-    </div>
+    </header>
   );
 }
