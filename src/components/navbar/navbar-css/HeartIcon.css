@@ -1,0 +1,14 @@
+.HeartAnimation {
+    width: 36px; 
+    height: 36px;
+    animation-name: animation ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animation {
+    0%   {width: 36px; height: 36px;}
+    50% {width: 47px; height: 47px;}
+    100%   {width: 36px; height: 36px;}
+
+  }
