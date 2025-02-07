@@ -1,16 +1,16 @@
 .shiny-text {
-    color: #ffffffa9; /* Adjust this color to change intensity/style */
+    color: #ffffff6d; /* Adjust this color to change intensity/style */
     background: linear-gradient(
       120deg,
-      rgba(255, 255, 255, 0) 40%,
-      rgb(255, 255, 255) 50%,
-      rgba(255, 255, 255, 0) 60%
+      rgba(255, 255, 255, 0) 15%,
+      rgb(255, 255, 255) 70%,
+      rgba(255, 255, 255, 0) 15%
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     display: inline-block;
-    animation: shine 5s linear infinite;
+    animation: shine 6s linear infinite;
   }
   
   @keyframes shine {
