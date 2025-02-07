@@ -19,10 +19,10 @@ export default function HeartIcon(){
 
     return(
 
-        <div  className=" w-14 h-14 flex justify-center items-center">
+        <div  className=" w-14 h-14 flex justify-center items-center absolute right-16">
             <img src={heartIconPath}
             alt="haert icon"
-            className="bg-black w-9 h-9 absolute right-16 shadow-white HeartAnimation caret-transparent"
+            className="w-9 h-9  shadow-white HeartAnimation caret-transparent"
             onClick={oncliclHandler}  />
         </div>
         

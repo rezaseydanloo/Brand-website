@@ -1,4 +1,5 @@
-import Frame from "./components/projectFrame/Frame.tsx"
+import Frame from "./components/projectFrame/Frame"
+
 
 function App() {
   
