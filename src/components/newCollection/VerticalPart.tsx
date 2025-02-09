@@ -1,7 +1,24 @@
+import "./NewCollection-Css/VerticalPart.css"
 
-export default function VerticalPart(){
+
+export default function VerticalPart({imgPath}:{imgPath:string}){
+
     return(
-        <div className="w-[400px] h-[437px] bg-slate-50 mr-3 mb-3 ">
+        <div className="card">
+
+            <div className="image-box">
+                <img src={imgPath} alt="new collection sample"  />
+            </div>
+            
+            <div className="content">
+                <h1> ford mustang 1969</h1>
+                <p>description jdncdn</p>
+                <p>description jdncdn</p>
+                <p>description jdncdndh db dhb</p>
+                <p>description jdncdndhbdhbc</p>
+                <p>description jdncdn dcbb</p>
+                <p>description jdncdn</p>
+            </div>
 
         </div>
     )

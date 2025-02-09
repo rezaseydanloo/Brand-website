@@ -1,7 +1,7 @@
 import HeartIcon from "./HeartIcon";
 import PersonIcon from "./PersonIcon";
 import SeachIcon from "./SearchIcon";
-import NikeIcon from "./navbar-css/NikeIcon";
+import NikeIcon from "./NikeIcon";
 import "./navbar-css/ShinyText.css"
 import "./navbar-css/Slider.css"
 
