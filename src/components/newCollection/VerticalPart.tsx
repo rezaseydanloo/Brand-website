@@ -7,10 +7,11 @@ export default function VerticalPart({imgPath}:{imgPath:string}){
         <div className="card">
 
             <div className="image-box">
-                <img src={imgPath} alt="new collection sample"  />
+                <img src={imgPath} alt="new collection sample" className="object-cover aspect-[14/16]" />
             </div>
             
-            <div className="content">
+            <div className="content ">
+                
                 <h1> ford mustang 1969</h1>
                 <p>description jdncdn</p>
                 <p>description jdncdn</p>
@@ -18,6 +19,7 @@ export default function VerticalPart({imgPath}:{imgPath:string}){
                 <p>description jdncdndhbdhbc</p>
                 <p>description jdncdn dcbb</p>
                 <p>description jdncdn</p>
+                
             </div>
 
         </div>

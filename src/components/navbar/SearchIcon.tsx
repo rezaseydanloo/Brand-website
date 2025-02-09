@@ -8,7 +8,7 @@ export default function SeachIcon() {
       <img
         src="src\icons\search-svgrepo-com.svg"
         alt="person icon"
-        className="inline w-12 h-14 caret-transparent absolute right-0 hover:scale-95 "/>
+        className="inline w-10 h-10 caret-transparent absolute right-0 hover:scale-75 duration-500 "/>
     </div>
   );
 }
