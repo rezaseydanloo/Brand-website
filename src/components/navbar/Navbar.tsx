@@ -7,25 +7,27 @@ import "./navbar-css/Slider.css"
 
 export default function Navbar() {
   return (
-    <header className="relative w-9/12 h-[10%] flex items-center ">
+    <header className="relative w-[100%] h-[10%] flex items-center ">
         
         <NikeIcon />
 
-      <ul className="flex ml-10 md:space-x-3 lg:space-x-5 xl:space-x-7 caret-transparent ">
+      <ul className="flex 
+                    ml-1 sm:ml-3 md:ml-5 lg:ml-7 xl:ml-8
+                    md:space-x-3 lg:space-x-5 xl:space-x-7 caret-transparent duration-300 ">
 
-        <li className="font-libre   mr-2 text-base md:text-xl lg:text-2xl shiny-text">
+        <li className="font-libre text-slate-500 mr-1 text-base md:text-xl lg:text-2xl shiny-text duration-300">
           Shop
           <div className="slider" >
           </div>  
         </li>
 
-        <li className="font-libre  text-slate-500 mr-2 text-base md:text-xl lg:text-2xl shiny-text">
+        <li className="font-libre  text-slate-500 mr-1 text-base md:text-xl lg:text-2xl shiny-text duration-300">
           ShoppingCart
           <div className="slider " >
           </div>
           </li>
 
-        <li className="font-libre  text-slate-500 bg-slate-300 mr-2 text-base md:text-xl lg:text-2xl shiny-text">
+        <li className="font-libre  text-slate-500 mr-2 text-base md:text-xl lg:text-2xl shiny-text duration-300">
           About
           <div className="slider" >
           </div>

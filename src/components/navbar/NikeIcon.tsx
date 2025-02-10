@@ -6,7 +6,8 @@ export default function NikeIcon(){
             alt="haert icon"
             className=" w-6 sm:w-8 md:w-10 lg:w-12 xl:w-14
                         h-6 sm:h-8 md:h-10 lg:h-12 xl:h-full 
-                        caret-transparent"
+                        ml-2 sm:ml-3 md:ml-4 lg:ml-5 xl:ml-6
+                        caret-transparent duration-300"
              />
     )   
 }

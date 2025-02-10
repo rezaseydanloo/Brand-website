@@ -19,7 +19,11 @@ export default function HeartIcon(){
 
     return(
 
-        <div  className=" w-14 h-14 flex justify-center items-center absolute right-16">
+        <div  className=" flex justify-center items-center absolute 
+                          right-10 sm:right-10 md:right-11 lg:right-11 xl:right-12
+                          duration-300
+                          w-6 sm:w-7 md:w-8 lg:w-8 xl:w-9
+                          h-6 sm:h-7 md:h-8 lg:h-8 xl:h-9">
             <img src={heartIconPath}
             alt="haert icon"
             className="w-9 h-9  shadow-white HeartAnimation caret-transparent"

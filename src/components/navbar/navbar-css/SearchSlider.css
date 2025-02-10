@@ -1,10 +1,10 @@
 .search-slider {
-    width: 0px;
-    height: 32px;
+    width: 0%;
+    height: 100%;
     background-color: white;
     transition: width 0.5s ease-in-out;
 }
 
 .search-zone:hover .search-slider {
-    width: 176px;
+    width: 70%;
 }
