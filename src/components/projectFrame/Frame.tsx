@@ -1,6 +1,7 @@
 import HomeBand from "../band/HomeBand";
 import Navbar from "../navbar/Navbar";
 import NewCollection from "../newCollection/NewCollectionFrame";
+import NewCollectionTag from "../newCollection/newCollectionTag/NewCollectionTag";
 
 import HomePoster from "../poster/HomePoster";
 
@@ -13,7 +14,10 @@ export default function Frame(){
             <Navbar />
             <HomePoster />
             <HomeBand />
+            <NewCollectionTag />
             <NewCollection />
+            
+            
             
         </div>
 
