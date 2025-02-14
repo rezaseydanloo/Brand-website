@@ -14,9 +14,8 @@ export default function Navbar() {
       <ul className="flex 
                     ml-1 sm:ml-3 md:ml-5 lg:ml-7 xl:ml-8
                     md:space-x-3 lg:space-x-5 xl:space-x-7 caret-transparent duration-300 ">
-
         <li className="font-libre text-slate-500 mr-1 text-base md:text-xl lg:text-2xl shiny-text duration-300">
-          Shop
+          Shop  
           <div className="slider" >
           </div>  
         </li>
