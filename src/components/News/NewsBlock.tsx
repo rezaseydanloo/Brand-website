@@ -1,8 +1,8 @@
 
 export default function NewsBlock(){
     return(
-        <div>
-            
+        <div className="w-full h-[250px] bg-white">
+
         </div>
     )
 }
