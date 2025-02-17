@@ -13,14 +13,14 @@ export default function NewCollectionAnotherFrame() {
                           sm:grid-cols-3 sm:grid-rows-3                
                           duration-500 overflow-auto`}>
         
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
             </section>
     );
 }

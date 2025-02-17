@@ -12,7 +12,8 @@ export default {
     extend: {
       fontFamily: {
         libre: ["Libre Baskerville", "serif"],
-        dancing: ["Dancing Script", "cursive"]
+        dancing: ["Dancing Script", "cursive"],
+        josefin: ["'Josefin Sans'", "sans-serif"]
 
       },
     },
