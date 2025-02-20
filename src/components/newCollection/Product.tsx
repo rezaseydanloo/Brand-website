@@ -14,9 +14,17 @@ export default function Product({path} : {path:string}){
                 <img src={path} alt="" />
             </div>
 
-            <div className="content">
-                <h2> title </h2>
-                <p> describtion </p>
+            <div className="content space-y-2">
+                <h1> product name  </h1>
+                <p> size : xs , xl , xxl , xxxl </p>
+                
+                <div className="w-full h-4 flex justify-center items-center space-x-1 ">
+                    <p className=" flex"> color : </p>
+                    <div className="w-3 h-3 bg-white mt-1 "></div>
+                    <div className="w-3 h-3 bg-black mt-1 "></div>
+                    <div className="w-3 h-3 bg-red-600 mt-1 "></div>
+                    <div className="w-3 h-3 bg-green-400 mt-1 "></div>
+                </div>
             </div>
         </div>
     )

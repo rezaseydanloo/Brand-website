@@ -5,7 +5,6 @@ import { useState } from "react";
 export default function NewCollectionMobileFrame() {
 
   const[isMore , setisMore] = useState <number>(0);
-    
   return (
       <section
          
@@ -21,10 +20,12 @@ export default function NewCollectionMobileFrame() {
             <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
             <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
             <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+            
             {isMore ?  <div> <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/> </div> : true}
             {isMore ?  <div> <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/> </div> : true}
             {isMore ?  <div> <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/> </div> : true}
             <MoreOption isMore={isMore} setisMore={setisMore} />
+            
       </section>
   );
 }

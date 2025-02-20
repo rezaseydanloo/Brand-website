@@ -34,9 +34,12 @@ export default function FamousFrame() {
   return (
     <div className="w-[90%] h-[660px] bg-black">
       <div className="flex w-[100%] h-[580px] bg-black space-x-6 justify-center">
-        <FamousCart path={PathArraye[Index - 2].pathImg} title={PathArraye[Index - 2].title}  mainCart={false}/>
-        <FamousCart path={PathArraye[Index - 1].pathImg} title={PathArraye[Index - 1].title}  mainCart={true}/>
-        <FamousCart path={PathArraye[Index].pathImg}  title={PathArraye[Index].title}     mainCart={false}/>
+        {window.innerWidth < 640 ? <FamousCart path={PathArraye[Index - 1].pathImg} title={PathArraye[Index - 1].title}  mainCart={true}/> :true}
+        {window.innerWidth > 640 && window.innerWidth <1024 ? <FamousCart path={PathArraye[Index - 2].pathImg} title={PathArraye[Index - 2].title}  mainCart={false}/> :true}
+        {window.innerWidth > 640 && window.innerWidth <1024? <FamousCart path={PathArraye[Index - 1].pathImg} title={PathArraye[Index - 1].title}  mainCart={true}/>:true}
+        {window.innerWidth >1024 ? <FamousCart path={PathArraye[Index - 2].pathImg} title={PathArraye[Index - 2].title}  mainCart={false}/> :true}
+        {window.innerWidth >1024 ? <FamousCart path={PathArraye[Index - 1].pathImg} title={PathArraye[Index - 1].title}  mainCart={true}/>:true}
+        {window.innerWidth >1024 ? <FamousCart path={PathArraye[Index].pathImg}  title={PathArraye[Index].title}         mainCart={false}/>:true}
       </div>
       <div className="w-[30%] h-[80px] bg-black flex justify-center items-center space-x-4">
         <LeftArow Leftarrow={ShiftLeft} Index={Index}  />
