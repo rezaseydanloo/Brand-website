@@ -14,10 +14,9 @@ export default function SeachIcon() {
   }
     
   return (
-    <div className="flex justify-center items-center absolute 
+    <div className="flex justify-center items-center relative
                     search-zone 
-                    right-[86px] sm:right-[86px] md:right-[86px] lg:right-[86px] xl:right-[86px]
-                    w-44 sm:w-72 md:w-72 lg:w-80 xl:w-80 
+                    w-44 sm:w-72 md:w-72 lg:w-80 xl:w-96 
                     h-8 sm:h-8 md:9 lg:h-8 xl:h-9">
                       
       <input type="text" className={`rounded-3xl outline-none absolute
