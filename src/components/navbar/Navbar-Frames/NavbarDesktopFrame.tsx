@@ -1,13 +1,13 @@
-import HeartIcon from "./HeartIcon";
-import PersonIcon from "./PersonIcon";
-import SeachIcon from "./SearchIcon";
-import NikeIcon from "./NikeIcon";
-import "./navbar-css/ShinyText.css"
-import "./navbar-css/Slider.css"
+import HeartIcon from "../HeartIcon";
+import PersonIcon from "../PersonIcon";
+import SeachIcon from "../SearchIcon";
+import NikeIcon from "../NikeIcon";
+import "../navbar-css/ShinyText.css"
+import "../navbar-css/Slider.css"
 
-export default function Navbar() {
+export default function NavbarDesktopFrame() {
   return (
-    <header className="sticky top-0 w-[100%] h-[10%] flex items-center  ">
+    <header className="sticky top-0 bg-black w-[100%] h-[10%] flex items-center ">
         
         <NikeIcon />
 
