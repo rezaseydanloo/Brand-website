@@ -13,14 +13,38 @@ export default function NewCollectionAnotherFrame() {
                           sm:grid-cols-3 sm:grid-rows-3                
                           duration-500 overflow-auto`}>
         
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
-              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}/>
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                              ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                              Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>
+
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                              ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                              Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>
+
+               <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                              ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                              Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>                                    
+
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                             ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                             Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>
+
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                             ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                             Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>
+
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                             ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                             Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>
+
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                             ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                             Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>
+
+              <Product path={"src/picture/nikeWeb/nike-just-do-it (2).jpg"}
+                             ProductName="Nike Shoze" ProductText="" Size="L , XL , XXL "
+                            Color1="bg-black" Color2="bg-red-500" Color3="bg-blue-500" Color4="bg-green-500"/>
+
             </section>
     );
 }

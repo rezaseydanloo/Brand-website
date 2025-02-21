@@ -42,11 +42,3 @@
     opacity: 1;
     transform: scale(0.9);
 }
-
-.card .content h1 {
-    font-size: x-large ;
-} 
-
-.card .content p {
-    font-size:large ;
-} 
