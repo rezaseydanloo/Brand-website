@@ -4,7 +4,8 @@ import NavbarMobileFrame from "./NavbarMobileFrame";
 
 
 
-export default function NavbarCrossroadsd(){
+export default function NavbarCrossroadsd({isMenu , setisMenu} : {isMenu : boolean , setisMenu : React.Dispatch<React.SetStateAction<boolean>>}){
+
 
     const [isDesktop,  setisDesktop]  = useState<boolean>(false);
     useEffect(() => {
@@ -21,7 +22,7 @@ export default function NavbarCrossroadsd(){
     }
     else{
         return(
-            <NavbarMobileFrame />
+             <NavbarMobileFrame isMenu={isMenu} setisMenu={setisMenu} />
         )
     }
 }

@@ -27,8 +27,8 @@ export default function SeachIcon() {
         alt="person icon"
         onClick={onClickhandler}
         className="inline
-                  w-6 sm:w-7 md:w-8 lg:w-8 xl:w-9
-                  h-6 sm:h-7 md:h-8 lg:h-8 xl:h-9
+                  w-7 sm:w-7 md:w-8 lg:w-8 xl:w-9
+                  h-7 sm:h-7 md:h-8 lg:h-8 xl:h-9
                   caret-transparent absolute right-0 hover:scale-75 duration-500 "/>
     </div>
   );
