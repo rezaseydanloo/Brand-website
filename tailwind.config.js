@@ -13,7 +13,8 @@ export default {
       fontFamily: {
         libre: ["Libre Baskerville", "serif"],
         dancing: ["Dancing Script", "cursive"],
-        josefin: ["'Josefin Sans'", "sans-serif"]
+        josefin: ["'Josefin Sans'", "sans-serif"],
+        lato: ['Lato', 'sans-serif'],
 
       },
     },
