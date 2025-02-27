@@ -1,6 +1,6 @@
 .card {
     width: 100%;
-    aspect-ratio: 1 / 0.7;
+    aspect-ratio: 1 / 1;
     position: relative;
     overflow: hidden;
 }
@@ -20,7 +20,6 @@
 .card .content {
     position: absolute;
     inset: 0;
-    border: 1px dotted white;
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.1); 
     display: flex;

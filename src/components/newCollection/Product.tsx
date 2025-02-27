@@ -33,7 +33,7 @@ export default function Product({path ,ProductName, ProductText, Size, Color1, C
       </div>
 
       <div
-        className={`absolute inset-0 border border-dotted border-white rounded-md bg-black/10 flex flex-col justify-center items-center text-white text-center transition-all duration-500
+        className={`absolute inset-0  rounded-md bg-black/10 flex flex-col justify-center items-center text-white text-center transition-all duration-500
             opacity-0 scale-100
             hover:opacity-100 hover:scale-90
             ${isClicked ? "opacity-100 scale-90" : ""}
