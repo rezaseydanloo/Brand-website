@@ -7,7 +7,7 @@ import "../navbar-css/Slider.css"
 
 export default function NavbarDesktopFrame() {
   return (
-    <header className="sticky top-0 bg-black w-[100%] h-[10%] flex items-center pl-2">
+    <header className="sticky top-0 bg-black w-[100%] h-[70px] flex items-center pl-2">
         
         <NikeIcon />
 

@@ -14,12 +14,30 @@ export default function NewsBlock() {
                  ${isFocused ? "scrollbar-show" : "scrollbar-hide"}`}
     >
       <div className="flex space-x-4 w-max h-[100%]">
-        <NewsCart />
-        <NewsCart />
-        <NewsCart />
-        <NewsCart />
-        <NewsCart />
-        <NewsCart />
+        <NewsCart
+         newtext="The Name's Origin – The company was originally called Blue Ribbon Sports before rebranding as Nike in 1971. The name comes from the Greek goddess of victory.
+The Name's Origin – The company was originally called Blue Ribbon Sports
+before rebranding as Nike in 1971. The name " />
+        
+        <NewsCart
+         newtext="The Name's Origin – The company was originally called Blue Ribbon Sports before rebranding as Nike in 1971. The name comes from the Greek goddess of victory." />
+        
+        <NewsCart
+         newtext="The Name's Origin – The company was originally called Blue Ribbon Sports before rebranding as Nike in 1971. The name comes from the Greek goddess of victory.
+The Name's Origin – The company was originally called Blue Ribbon Sports
+before rebranding as Nike in 1971. The name comes from the Greek goddess of victory.
+The Name's Origin – The company was originally called Blue Ribbon Sports
+before rebranding as Nike in 1971." />
+
+        <NewsCart
+         newtext="The Name's Origin – The company was originally called Blue Ribbon Sports before rebranding as Nike in 1971. The name comes from the Greek goddess of victory.
+The Name's Origin –  The name comes from the Greek goddess of victory." />
+
+        <NewsCart
+         newtext="The Name's Origin – The company was originally called Blue Ribbon Sports before rebranding as Nike in 1971. The name comes from the Greek goddess of victory.
+The Name's Origin – The company was originally called Blue Ribbon Sports
+before" />
+         
       </div>
     </div>
   );

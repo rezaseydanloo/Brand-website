@@ -9,6 +9,9 @@ import NewCollection from "../newCollection/NewCollectionFrame";
 import NewsTag from "../News/NewsTag";
 import NewsBlock from "../News/NewsBlock";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
+import FooterFrameDesktop from "../footer/FooterFrameDesktop";
+import NikeLogo from "../band/NikeLogo";
+
 
 export default function Frame() {
 
@@ -25,7 +28,7 @@ export default function Frame() {
         <HamburgerMenu isMenu={isMenu} setisMenu={setIsMenu} /> : true}
 
 
-      <div className="flex-1 w-full flex flex-col items-center bg-black overflow-y-auto mt-16">
+      <div className="flex-1 w-full flex flex-col items-center bg-black  mt-16">
         <HomePoster />
         <HomeBand />
         <ShopByFamousTag />
@@ -33,9 +36,10 @@ export default function Frame() {
         <NewCollectionTag />
         <NewCollection />
         <NewsTag />
+        <NikeLogo />
         <NewsBlock />
+        <FooterFrameDesktop />
 
-        <div className="h-44 w-full bg-black"></div>
       </div>
 
       

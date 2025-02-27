@@ -12,7 +12,7 @@ export default function CrossIcon({isMenu , setisMenu} : {isMenu : boolean ,seti
                    w-8 sm:w-10 md:w-12 
                    h-8 sm:h-10 md:h-12 
                    caret-transparent hover:scale-75 duration-500 rounded-lg"
-                   onClick={onClickHandler} />
+                   onClick={onClickHandler}/>
         
         
     )
