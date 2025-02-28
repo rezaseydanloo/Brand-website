@@ -1,4 +1,3 @@
-import { useState } from "react";
 import HomeBand from "../band/HomeBand";
 import NavbarCrossroadsd from "../navbar/Navbar-Frames/NavbarCrossroads";
 import HomePoster from "../poster/HomePoster";
@@ -11,7 +10,7 @@ import NewsBlock from "../News/NewsBlock";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import FooterFrameDesktop from "../footer/FooterFrameDesktop";
 import NikeLogo from "../band/NikeLogo";
-
+import { useState } from "react";
 
 export default function Frame() {
 
@@ -24,11 +23,11 @@ export default function Frame() {
         <NavbarCrossroadsd isMenu={isMenu} setisMenu={setIsMenu} />
       </div>
 
-      {isMenu && window.innerWidth<1024 ? 
-        <HamburgerMenu isMenu={isMenu} setisMenu={setIsMenu} /> : true}
+      <div className={`lg:hidden ${isMenu ? 'block' : 'hidden'}`}>
+        <HamburgerMenu isMenu={isMenu} setisMenu={setIsMenu} />
+      </div>
 
-
-      <div className="flex-1 w-full flex flex-col items-center bg-black  mt-16">
+      <div className="flex-1 w-full flex flex-col items-center bg-black mt-16">
         <HomePoster />
         <HomeBand />
         <ShopByFamousTag />
@@ -39,11 +38,8 @@ export default function Frame() {
         <NikeLogo />
         <NewsBlock />
         <FooterFrameDesktop />
-
       </div>
 
-      
-      
     </div>
   );
 }
