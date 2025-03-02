@@ -11,6 +11,7 @@ import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import FooterFrameDesktop from "../footer/FooterFrameDesktop";
 import NikeLogo from "../band/NikeLogo";
 import { useState } from "react";
+import CrossRoadFooterFrame from "../footer/CrossRoadFooterFrame";
 
 export default function Frame() {
 
@@ -37,7 +38,8 @@ export default function Frame() {
         <NewsTag />
         <NikeLogo />
         <NewsBlock />
-        <FooterFrameDesktop />
+        <CrossRoadFooterFrame />
+        
       </div>
 
     </div>
