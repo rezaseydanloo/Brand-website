@@ -1,3 +1,4 @@
+import { createContext, useState } from "react";
 import HomeBand from "../band/HomeBand";
 import NavbarCrossroadsd from "../navbar/Navbar-Frames/NavbarCrossroads";
 import HomePoster from "../poster/HomePoster";
@@ -8,20 +9,24 @@ import NewCollection from "../newCollection/NewCollectionFrame";
 import NewsTag from "../News/NewsTag";
 import NewsBlock from "../News/NewsBlock";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
-import FooterFrameDesktop from "../footer/FooterFrameDesktop";
 import NikeLogo from "../band/NikeLogo";
-import { useState } from "react";
 import CrossRoadFooterFrame from "../footer/CrossRoadFooterFrame";
+
+// Create the context outside the component
+export const MyContext = createContext({});
 
 export default function Frame() {
 
   const [isMenu, setIsMenu] = useState<boolean>(false);
+  const [isSearchPanel, setisSearchPanel] = useState<boolean>(false);
 
   return (
     <div className="bg-black h-full flex flex-col relative">
       
       <div className="w-full fixed top-0 left-0 z-50">
-        <NavbarCrossroadsd isMenu={isMenu} setisMenu={setIsMenu} />
+        <MyContext.Provider value={{ isSearchPanel, setisSearchPanel }}>
+          <NavbarCrossroadsd isMenu={isMenu} setisMenu={setIsMenu} />
+        </MyContext.Provider>
       </div>
 
       <div className={`lg:hidden ${isMenu ? 'block' : 'hidden'}`}>
@@ -39,9 +44,7 @@ export default function Frame() {
         <NikeLogo />
         <NewsBlock />
         <CrossRoadFooterFrame />
-        
       </div>
-
     </div>
   );
 }

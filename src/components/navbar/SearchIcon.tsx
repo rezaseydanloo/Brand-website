@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import {MyContext} from "../projectFrame/Frame"
 
 export default function SeachIcon() {
 
   const [SearchOption , setSearchOption] = useState<boolean>(true)
 
+  const {setisSearchPanel} = useContext<{setisSearchPanel: React.Dispatch<React.SetStateAcLtion<boolean>>}>(MyContext);
+
   const onClickhandler = ()=> {
     if (SearchOption){
       setSearchOption(false)
+      setisSearchPanel(true)
     }
     else{
       setSearchOption(true)
+      setisSearchPanel(false)
     }
   }
     
@@ -19,7 +24,7 @@ export default function SeachIcon() {
                     w-44 sm:w-72 md:w-72 lg:w-80 xl:w-96 
                     h-8 sm:h-8 md:9 lg:h-8 xl:h-9">
                       
-      <input type="text" className={`rounded-3xl outline-none absolute
+      <input type="text" className={`rounded-3xl outline-none absolute pl-1
                     right-7 sm:right-8 md:right-9 lg:right-10 xl:right-11 
                     shiny-text border ${SearchOption ? "w-0 duration-500" : "w-[70%] duration-500"} `} />
       <img

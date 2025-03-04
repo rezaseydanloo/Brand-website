@@ -4,10 +4,15 @@ import SeachIcon from "../SearchIcon";
 import NikeIcon from "../NikeIcon";
 import "../navbar-css/ShinyText.css"
 import "../navbar-css/Slider.css"
+import {MyContext} from "../../projectFrame/Frame"
+import { useContext } from "react";
 
 export default function NavbarDesktopFrame() {
+
+  const {isSearchPanel} = useContext<{isSearchPanel:boolean}>(MyContext);
+
   return (
-    <header className="sticky top-0 bg-black w-[100%] h-[70px] flex items-center pl-2">
+    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 rounded-b-2xl" : "h-[70px] duration-500" } flex items-start pl-2`}>
         
         <NikeIcon />
 
