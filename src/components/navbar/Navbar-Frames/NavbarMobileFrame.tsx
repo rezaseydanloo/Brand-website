@@ -7,6 +7,8 @@ import SeachIcon from "../SearchIcon";
 import MenuIcon from "../MenuIcon";
 import {MyContext} from "../../projectFrame/Frame"
 import { useContext } from "react";
+import SearchOnPanel from "../SearchOnPanel"
+
 
 
 export default function NavbarMobileFrame({isMenu , setisMenu} : {isMenu : boolean ,setisMenu : React.Dispatch<React.SetStateAction<boolean>>}) {
@@ -14,7 +16,7 @@ export default function NavbarMobileFrame({isMenu , setisMenu} : {isMenu : boole
   const {isSearchPanel} = useContext<{isSearchPanel:boolean}>(MyContext);
 
   return (
-    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500" : "h-[50px] duration-500" } flex items-start pl-2`}>
+    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 bg-zinc-900 flex flex-wrap" : "h-[50px] duration-500" } flex items-start pl-2`}>
         
       <NikeIcon />
       <div className="w-[80%] h-14 flex justify-end items-center relative ml-auto pr-3 space-x-1">
@@ -24,6 +26,7 @@ export default function NavbarMobileFrame({isMenu , setisMenu} : {isMenu : boole
         <PersonIcon />
         <MenuIcon isMenu={isMenu} setisMenu={setisMenu} />
       </div>
+      {isSearchPanel ? <SearchOnPanel /> : ""}
       
       
     </header>

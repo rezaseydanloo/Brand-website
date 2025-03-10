@@ -12,7 +12,7 @@ export default function NavbarDesktopFrame() {
   const {isSearchPanel } = useContext<{isSearchPanel:boolean}>(MyContext);
 
   return (
-    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500" 
+    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 bg-zinc-800" 
     : "h-[70px] duration-500" } flex items-start pl-2`}>
         
         <NikeIcon />
@@ -40,7 +40,7 @@ export default function NavbarDesktopFrame() {
 
       </ul>
 
-      <div className="w-[40%] pr-4 h-16  flex justify-end items-center ml-auto">
+      <div className="w-[40%] pr-4 h-16 flex justify-end items-center ml-auto ">
         <SeachIcon />
         <HeartIcon />
         <PersonIcon />
