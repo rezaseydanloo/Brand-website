@@ -6,13 +6,18 @@ import "../navbar-css/ShinyText.css"
 import "../navbar-css/Slider.css"
 import {MyContext} from "../../projectFrame/Frame"
 import { useContext } from "react";
+import SearchOnPanelDesktop from "../SearchOnPaneldesktop"
 
 export default function NavbarDesktopFrame() {
 
-  const {isSearchPanel } = useContext<{isSearchPanel:boolean}>(MyContext);
+  const context = useContext(MyContext);
+  if (!context) {
+    throw new Error("MyContext is not provided");
+  }
+  const { isSearchPanel } = context; 
 
   return (
-    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 bg-zinc-800" 
+    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 bg-zinc-800 flex flex-wrap shadow-md shadow-black " 
     : "h-[70px] duration-500" } flex items-start pl-2`}>
         
         <NikeIcon />
@@ -44,8 +49,8 @@ export default function NavbarDesktopFrame() {
         <SeachIcon />
         <HeartIcon />
         <PersonIcon />
-        
       </div>
+      {isSearchPanel ? <SearchOnPanelDesktop /> : ""}
 
       
     </header>

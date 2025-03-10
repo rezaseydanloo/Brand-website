@@ -12,7 +12,12 @@ import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import NikeLogo from "../band/NikeLogo";
 import CrossRoadFooterFrame from "../footer/CrossRoadFooterFrame";
 
-export const MyContext = createContext({});
+interface MyContextType {
+  isSearchPanel: boolean;
+  setisSearchPanel: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const MyContext = createContext<MyContextType | undefined>(undefined);
 
 export default function Frame() {
 

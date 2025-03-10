@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 
-export default function searchOnPanel(){
+export default function searchOnPanelmobile(){
 
     const items = ["shose blazer" , "travis scot shose all " , "running shose" , "wrestling shose" , "footbal Shose nike" , "red shose" , "shose blazer" , "wrestling black shose"]
 

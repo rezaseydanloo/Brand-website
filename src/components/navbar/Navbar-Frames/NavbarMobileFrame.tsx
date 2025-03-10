@@ -7,13 +7,17 @@ import SeachIcon from "../SearchIcon";
 import MenuIcon from "../MenuIcon";
 import {MyContext} from "../../projectFrame/Frame"
 import { useContext } from "react";
-import SearchOnPanel from "../SearchOnPanel"
+import SearchOnPanelmobile from "../SearchOnPanelmobile"
 
 
 
 export default function NavbarMobileFrame({isMenu , setisMenu} : {isMenu : boolean ,setisMenu : React.Dispatch<React.SetStateAction<boolean>>}) {
 
-  const {isSearchPanel} = useContext<{isSearchPanel:boolean}>(MyContext);
+  const context = useContext(MyContext);
+  if (!context) {
+    throw new Error("MyContext is not provided");
+  }
+  const { isSearchPanel } = context; 
 
   return (
     <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 bg-zinc-900 flex flex-wrap" : "h-[50px] duration-500" } flex items-start pl-2`}>
@@ -26,7 +30,7 @@ export default function NavbarMobileFrame({isMenu , setisMenu} : {isMenu : boole
         <PersonIcon />
         <MenuIcon isMenu={isMenu} setisMenu={setisMenu} />
       </div>
-      {isSearchPanel ? <SearchOnPanel /> : ""}
+      {isSearchPanel ? <SearchOnPanelmobile /> : ""}
       
       
     </header>
