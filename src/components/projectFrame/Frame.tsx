@@ -12,7 +12,6 @@ import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 import NikeLogo from "../band/NikeLogo";
 import CrossRoadFooterFrame from "../footer/CrossRoadFooterFrame";
 
-// Create the context outside the component
 export const MyContext = createContext({});
 
 export default function Frame() {

@@ -14,7 +14,7 @@ export default function NavbarMobileFrame({isMenu , setisMenu} : {isMenu : boole
   const {isSearchPanel} = useContext<{isSearchPanel:boolean}>(MyContext);
 
   return (
-    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 rounded-b-2xl" : "h-[50px] duration-500" } flex items-start pl-2`}>
+    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500" : "h-[50px] duration-500" } flex items-start pl-2`}>
         
       <NikeIcon />
       <div className="w-[80%] h-14 flex justify-end items-center relative ml-auto pr-3 space-x-1">
