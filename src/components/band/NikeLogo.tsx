@@ -27,7 +27,7 @@ export default function NikeLogo() {
   return (
     <div id="nike-logo" className="w-full h-72 mt-3 flex justify-center items-center ">
       <motion.img
-        src="src/icons/nike-4-logo-svgrepo-com.svg"
+        src="icons/nike-4-logo-svgrepo-com.svg"
         className="w-full h-full"
         alt="Nike logo"
         initial={{ opacity: 0}}

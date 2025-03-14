@@ -10,7 +10,7 @@ export default function ShopRow(){
             <p className="font-lato h-full flex items-center w-[80%] text-lg sm:text-2xl md:text-3xl pl-4"> Nike Shop </p>
 
             <img
-                src="src/icons/Hamburger-Menu/shop-svgrepo-com.svg"
+                src="icons/Hamburger-Menu/shop-svgrepo-com.svg"
                 className="w-[25%] sm:w-[20%] h-[100%] p-2 sm:p-3 md:p-4 hover:scale-75 duration-500"
                 alt="shop icon"/>
 

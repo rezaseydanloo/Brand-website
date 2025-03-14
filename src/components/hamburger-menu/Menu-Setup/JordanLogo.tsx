@@ -4,7 +4,7 @@ export default function JordanLogo() {
   return (
     <div className="w-full h-[30%] mt-3 flex justify-center items-center">
       <motion.img
-        src="src/icons/Hamburger-Menu/jordan-svgrepo-com.svg"
+        src="icons/Hamburger-Menu/jordan-svgrepo-com.svg"
         className="w-[50%] h-[50%]"
         alt="Jordan logo"
         initial={{ x: -100, opacity: 0 }} // شروع از بیرون صفحه (چپ)

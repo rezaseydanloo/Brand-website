@@ -32,7 +32,7 @@ export default function HamburgerMenu({
                       justify-start items-center mt-1 sm:mt-2 md:mt-3 px-2">
 
         <CrossIcon isMenu={isMenu} setisMenu={setisMenu} />
-        <JustDoIt />
+        {isMenu ?<JustDoIt /> : ""}
       </div>
 
       <hr className="w-[90%] mt-2 md:mt-4 ml-[5%]" />

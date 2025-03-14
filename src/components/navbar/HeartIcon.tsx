@@ -4,16 +4,16 @@ import "./navbar-css/HeartIcon.css"
 export default function HeartIcon(){
 
     const [heartCount , setheartCount] = useState(0);
-    const [heartIconPath , setheartIconpath] = useState("src/icons/heart-svgrepo-com.svg")
+    const [heartIconPath , setheartIconpath] = useState("icons/heart-svgrepo-com.svg")
 
     const oncliclHandler=() : void=>{
         if (heartCount == 0){
             setheartCount(1);
-            setheartIconpath("src/icons/heart-svgrepo-com.svg")
+            setheartIconpath("/icons/heart-svgrepo-com.svg")
         }
         else{
             setheartCount(0);
-            setheartIconpath("src/icons/heart2-svgrepo-com.svg")
+            setheartIconpath("/icons/heart2-svgrepo-com.svg")
         }
     }
 

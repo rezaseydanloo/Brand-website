@@ -14,7 +14,7 @@ export default function NewCollectionAnotherFrame() {
 
   const NewCollectionArray: ProductInformation[] = [
     {
-      Path: "src/picture/NewCollection/kobe-mens-max90-basketball-t-shirt-J7RdC2.jfif",
+      Path: "/picture/NewCollection/kobe-mens-max90-basketball-t-shirt-J7RdC2.jfif",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -24,7 +24,7 @@ export default function NewCollectionAnotherFrame() {
       Color4: "bg-green-500",
     },
     {
-      Path: "/src/picture/NewCollection/sportswear-phoenix-fleece-womens-over-oversized-pullover-hoodie-Kqx9H3.jfif",
+      Path: "/picture/NewCollection/sportswear-phoenix-fleece-womens-over-oversized-pullover-hoodie-Kqx9H3.jfif",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -34,7 +34,7 @@ export default function NewCollectionAnotherFrame() {
       Color4: "bg-green-500",
     },
     {
-      Path: "/src/picture/NewCollection/sportswear-tech-fleece-womens-high-waisted-mini-skirt-82MtjL.jfif",
+      Path: "/picture/NewCollection/sportswear-tech-fleece-womens-high-waisted-mini-skirt-82MtjL.jfif",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -44,7 +44,7 @@ export default function NewCollectionAnotherFrame() {
       Color4: "bg-green-500",
     },
     {
-      Path: "/src/picture/NewCollection/W+NSW+PHNX+FLC+OOS+PO+HOODIE.jpg",
+      Path: "/picture/NewCollection/W+NSW+PHNX+FLC+OOS+PO+HOODIE.jpg",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -54,7 +54,7 @@ export default function NewCollectionAnotherFrame() {
       Color4: "bg-green-500",
     },
     {
-      Path: "/src/picture/NewCollection/AIR+JORDAN+4+RM.jpg",
+      Path: "/picture/NewCollection/AIR+JORDAN+4+RM.jpg",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -64,7 +64,7 @@ export default function NewCollectionAnotherFrame() {
       Color4: "bg-green-500",
     },
     {
-      Path: "/src/picture/NewCollection/jordan-brooklyn-fleece-mens-pullover-hoodie-dGf5LT.jfif",
+      Path: "/picture/NewCollection/jordan-brooklyn-fleece-mens-pullover-hoodie-dGf5LT.jfif",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -74,7 +74,7 @@ export default function NewCollectionAnotherFrame() {
       Color4: "bg-green-500",
     },
     {
-      Path: "/src/picture/NewCollection/pro-womens-3-shorts-4HBtrm.jfif",
+      Path: "/picture/NewCollection/pro-womens-3-shorts-4HBtrm.jfif",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -84,7 +84,7 @@ export default function NewCollectionAnotherFrame() {
       Color4: "bg-green-500",
     },
     {
-      Path: "/src/picture/NewCollection/image.jpg",
+      Path: "/picture/NewCollection/image.jpg",
       ProductName: "Nike Shoes",
       ProductText: "",
       Size: "L , XL , XXL ",
@@ -118,7 +118,6 @@ export default function NewCollectionAnotherFrame() {
           Color4={product.Color4}
         />
       ))}
-      
     </section>
   );
 }
