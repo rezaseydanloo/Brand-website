@@ -2,7 +2,6 @@ import { useState } from "react";
 import LeftArow from "./Arows/LeftArow";
 import RightArow from "./Arows/RightArow";
 import FamousCart from "./FamousCart";
-import { tr } from "framer-motion/client";
 
 export default function FamousFrame() {
   const [Index, setIndex] = useState(2); // مقدار Index در state ذخیره شده 

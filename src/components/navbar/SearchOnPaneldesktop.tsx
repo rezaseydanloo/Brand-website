@@ -15,7 +15,7 @@ export default function searchOnPanelDesktop(){
 
           <motion.div
           key={index}
-          className=" bg-zinc-300 border-2 border-white font-bold h-11 text-black w-fit  flex items-center pl-2 pr-2 rounded-full hover:scale-80"
+          className=" bg-zinc-100 border-1 border-white font-bold h-11 text-black w-fit  flex items-center pl-2 pr-2 rounded-full hover:scale-80"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: index * 0.1 }}

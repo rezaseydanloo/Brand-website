@@ -17,7 +17,7 @@ export default function NavbarDesktopFrame() {
   const { isSearchPanel } = context; 
 
   return (
-    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 bg-zinc-800 flex flex-wrap shadow-md shadow-black " 
+    <header className={`sticky top-0 bg-black w-[100%] ${isSearchPanel ? "h-[250px] duration-500 bg-zinc-800 flex flex-wrap shadow-md  " 
     : "h-[70px] duration-500" } flex items-start pl-2`}>
         
         <NikeIcon />

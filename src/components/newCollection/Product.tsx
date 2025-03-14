@@ -12,7 +12,7 @@ type productObj = {
   Color4: string;
 };
 
-export default function Product({path ,ProductName, ProductText, Size, Color1, Color2, Color3, Color4}: productObj) {
+export default function Product({path ,ProductName, Size, Color1, Color2, Color3, Color4}: productObj) {
 
   const [isClicked, setIsClicked] = useState(false);
 

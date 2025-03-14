@@ -5,8 +5,12 @@ export default function SeachIcon() {
 
   const [SearchOption , setSearchOption] = useState<boolean>(true)
 
-  const {setisSearchPanel} = useContext<{setisSearchPanel: React.Dispatch<React.SetStateAcLtion<boolean>>}>(MyContext);
-
+  const context = useContext(MyContext);
+  if (!context) {
+    throw new Error("MyContext is not provided");
+  }
+  const { setisSearchPanel } = context; 
+  
   const onClickhandler = ()=> {
     if (SearchOption){
       setSearchOption(false)
