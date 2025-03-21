@@ -7,7 +7,9 @@ export default function CenterOneBlock() {
     <div
       className={`grid grid-cols-2 w-full overflow-hidden duration-700 pl-[5%] cursor-pointer 
                         ${isOpen ? "h-[49%]" : "h-[15%]"}`}
-      onClick={() => setIsOpen(!isOpen)} // تغییر وضعیت نمایش
+      onClick={() => setIsOpen(!isOpen)} // change display sttatus 
+      tabIndex={0}
+      onBlur={()=> setIsOpen(false)}
     >
       <p className="col-span-1 text-white font-lato cursor-pointer font-semibold bg-black z-10">
         Help
